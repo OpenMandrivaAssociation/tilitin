@@ -5,7 +5,7 @@
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Summary:	A free bookkeeping software
+Summary:	Free Finnish bookkeeping software
 Group:		Office
 License:	GPLv3+
 URL:		http://helineva.net/tilitin/
@@ -16,18 +16,19 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	locales
 BuildRequires:	ant
 BuildRequires:	crimson
+BuildRequires:	java-rpmbuild
 Requires:	java >= 1.6.0
 Requires:	javasqlite
 BuildArch:	noarch
 
 %description
-Tilitin is a free bookkeeping software for Windows and Linux.
+Tilitin is a free Finnish bookkeeping software for Windows and Linux.
 
 %prep
 %setup -q
 
 %build 
-LC_ALL=UTF-8 ant
+LC_ALL=UTF-8 %ant
 
 %install
 rm -rf %{buildroot}
@@ -56,4 +57,3 @@ rm -rf %{buildroot}
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_iconsbasedir}/*/apps/%{name}.png
-
