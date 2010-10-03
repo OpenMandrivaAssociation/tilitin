@@ -1,5 +1,5 @@
 %define name	tilitin
-%define version	0.8.4
+%define version	0.8.5
 %define release	%mkrel 1
 
 Name:		%{name}
