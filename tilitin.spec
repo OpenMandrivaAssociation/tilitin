@@ -1,5 +1,5 @@
 %define name	tilitin
-%define version	0.11.3
+%define version	0.12.0
 %define release	%mkrel 1
 
 Name:		%{name}
@@ -15,7 +15,7 @@ Source2:	%{name}.desktop
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	locales
 BuildRequires:	ant
-BuildRequires:	crimson
+#BuildRequires:	crimson
 BuildRequires:	java-rpmbuild
 Requires:	java >= 1.6.0
 Requires:	javasqlite
