@@ -1,5 +1,5 @@
 %define name	tilitin
-%define version	0.13.0
+%define version	0.14.0
 %define release	%mkrel 1
 
 Name:		%{name}
@@ -12,7 +12,6 @@ URL:		http://helineva.net/tilitin/
 Source:		http://helineva.net/tilitin/%{name}-%{version}-src.zip
 Source1:	%{name}
 Source2:	%{name}.desktop
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	locales
 BuildRequires:	ant
 #BuildRequires:	crimson
