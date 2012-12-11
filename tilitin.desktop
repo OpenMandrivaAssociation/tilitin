@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Tilitin
+GenericName=Bookkeeping software
+Comment=A free Finnish bookkeeping software
+Terminal=false
+Exec=tilitin %F
+Icon=tilitin
+Type=Application
+Categories=Office;Finance;X-MandrivaLinux-CrossDesktop;
