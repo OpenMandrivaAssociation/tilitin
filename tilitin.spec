@@ -8,7 +8,7 @@ Release:	%{release}
 Summary:	Free Finnish bookkeeping software
 Group:		Office
 License:	GPLv3+
-URL:		http://helineva.net/tilitin/
+URL:		https://helineva.net/tilitin/
 Source:		http://helineva.net/tilitin/%{name}-%{version}-src.zip
 Source1:	%{name}
 Source2:	%{name}.desktop
